@@ -16,11 +16,11 @@ class GildedRose {
             if (!items[i].name.equals(agedBrie) && !items[i].name.equals(backStagePass)) {
                 updateNormalItemQuality(i);
             } else if (items[i].quality < 50) {
-                    items[i].quality++;
+                items[i].quality++;
 
-                    if (items[i].name.equals(backStagePass)) {
-                        updatebackStagePassQuality(i);
-                    }
+                if (items[i].name.equals(backStagePass)) {
+                    updatebackStagePassQuality(i);
+                }
             }
             updateSellIn(i);
             updateBackStage(i);
@@ -28,8 +28,12 @@ class GildedRose {
     }
 
     public void updateNormalItemQuality(int i) {
-        if (items[i].quality > 0 && !items[i].name.equals(sulfuras)) {
-            items[i].quality--;
+        if (items[i].quality > 0) {
+            if (items[i].name.matches("conjured.*")) {
+                items[i].quality = items[i].quality - 2;
+            } else if (!items[i].name.equals(sulfuras)) {
+                items[i].quality--;
+            }
         }
     }
 
@@ -43,11 +47,13 @@ class GildedRose {
             }
         }
     }
+
     public void updateSellIn(int i) {
         if (!items[i].name.equals(sulfuras)) {
             items[i].sellIn--;
         }
     }
+
     public void updateBackStage(int i) {
         if (items[i].sellIn < 0) {
             if (!items[i].name.equals(agedBrie)) {
@@ -59,6 +65,7 @@ class GildedRose {
             }
         }
     }
+
     public void updateBackStageQuality(int i) {
         if (!items[i].name.equals(backStagePass)) {
             if (items[i].quality > 0 && !items[i].name.equals(sulfuras)) {

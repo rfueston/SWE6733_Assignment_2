@@ -227,23 +227,30 @@ class GildedRoseTest {
         assertEquals(80, app.items[0].quality);
     }
 
-//    @Test
-//        //Sulfuras with wrong quality
-//    void test_quality_17() {
-//        Item[] items = new Item[] { new Item("Sulfuras, Hand of Ragnaros", -50, 79) };
-//        GildedRose app = new GildedRose(items);
-//        app.updateQuality();
-//        assertEquals(80, app.items[0].quality);
-//    }
+    @Test
+        //Conjured items degrade twice as fast
+    void test_quality_17() {
+        Item[] items = new Item[] { new Item("conjured apples", 2, 10) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(8, app.items[0].quality);
+    }
 
-//    @Test
-        //quality can not decrease below 0 even if a negative number is entered
-//    void test_quality_11() {
-//        Item[] items = new Item[] { new Item("foo", 50, -1) };
-//        GildedRose app = new GildedRose(items);
-//        app.updateQuality();
-//        assertEquals(0, app.items[0].quality);
-//    }
+    @Test
+        //Conjured items degrade twice as fast for conjured pears
+    void test_quality_18() {
+        Item[] items = new Item[] { new Item("conjured pears", 6, 12) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(10, app.items[0].quality);
+    }
 
-
+    @Test
+        //Conjured items degrade twice as fast for conjured pears
+    void test_quality_19() {
+        Item[] items = new Item[] { new Item("not conjured pears", 6, 12) };
+        GildedRose app = new GildedRose(items);
+        app.updateQuality();
+        assertEquals(11, app.items[0].quality);
+    }
 }
