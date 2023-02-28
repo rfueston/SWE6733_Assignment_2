@@ -15,7 +15,7 @@ Richard Fueston
 Scott Duong
 
 
-The tool we used for f-2-f-like collaboration  was microsoft teams. the rationale behind it was it is a service <br> supplied to us by the school and has <br> easy screen sharing and other such features to support mobbing. Teams also offers a great recording tool for our mobbing sessions. 
+The tool we used for f-2-f-like collaboration  was microsoft teams. the rationale behind it was it is a service supplied to us <br> by the school and has  easy screen sharing and other such features to support mobbing. Teams also offers a great recording tool for our mobbing sessions. 
 
 Step 2: unit tests for legacy code
 <br>
