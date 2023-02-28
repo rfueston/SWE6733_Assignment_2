@@ -19,7 +19,7 @@ The tool we used for f-2-f-like collaboration was Microsoft teams. the rationale
 
 Step 2: unit tests for legacy code
 
-(URL)
+(https://youtu.be/ETU9BH2JcnQ)
 
 Step 3: Code Coverage Tool
 
@@ -35,10 +35,10 @@ Step 4: Unit tests Passing
 
 Step 5: refactor legacy code
 
-(URL)
+(https://youtu.be/b0YjcN2UC48)
 
 Step 6: New Feature 
 
-(URL)
+(https://youtu.be/Y0hTVEZh1x8)
 
 
