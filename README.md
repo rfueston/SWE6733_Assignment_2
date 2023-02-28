@@ -1,5 +1,7 @@
 # SWE6733_Assignment_2
 
+Group 2
+<br>
 Samuel Owoade
 Talia Crawford
 Ayorinde Lawani
