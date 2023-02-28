@@ -3,15 +3,10 @@
 Group 2:
 
 Samuel Owoade
-
 Talia Crawford
-
 Ayorinde Lawani
-
 Abel Uzoka
-
 Richard Fueston
-
 Scott Duong
 
 
