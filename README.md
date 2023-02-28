@@ -19,6 +19,8 @@ Step 3: Code Coverage Tool
 Our team used SonarLint as our code covereage tool becuase it was compatible with the IDE we decided to use IntelliJ IDEA.
 
 (code-coverage.png)
+(code-coverage_2.png)
+
 
 Step 4: Unit tests Passing 
 
